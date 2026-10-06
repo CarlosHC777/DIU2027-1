@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Objetos Perdidos</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Objetos Perdidos</h1>
+
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#objetos">Buscar</a>
+                <a href="#reportar">Reportar</a>
+                <a href="#recuperados">Recuperados</a>
+            </nav>
+
+            <a href="#">Mi cuenta</a>
+        </div>
+
+        <form>
+            <label for="buscar">Buscar objeto</label>
+            <input
+                type="search"
+                id="buscar"
+                name="buscar"
+                placeholder="¿Qué estás buscando?"
+            >
+
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+
+    <main id="inicio">
+
+        <section id="objetos">
+
+            <div>
+                <h2>Objetos recientes</h2>
+
+                <article>
+                    <h3>Mochila negra</h3>
+
+                    <p>Perdido</p>
+
+                    <p>
+                        <strong>Lugar:</strong>
+                        Facultad de Ciencias
+                    </p>
+
+                    <p>
+                        <strong>Fecha:</strong>
+                        2 de octubre
+                    </p>
+
+                    <p>
+                        Mochila negra encontrada cerca de los salones.
+                    </p>
+
+                    <button type="button">Ver detalles</button>
+                </article>
+
+
+                <article>
+                    <h3>Llaves</h3>
+
+                    <p>Encontrado</p>
+
+                    <p>
+                        <strong>Lugar:</strong>
+                        Biblioteca
+                    </p>
+
+                    <p>
+                        <strong>Fecha:</strong>
+                        3 de octubre
+                    </p>
+
+                    <p>
+                        Juego de llaves con un llavero metálico.
+                    </p>
+
+                    <button type="button">Ver detalles</button>
+                </article>
+
+
+                <article id="recuperados">
+                    <h3>Teléfono móvil</h3>
+
+                    <p>Recuperado</p>
+
+                    <p>
+                        <strong>Lugar:</strong>
+                        Cafetería
+                    </p>
+
+                    <p>
+                        <strong>Fecha:</strong>
+                        4 de octubre
+                    </p>
+
+                    <p>
+                        Teléfono que ya fue entregado a su propietario.
+                    </p>
+
+                    <button type="button">Ver detalles</button>
+                </article>
+            </div>
+
+
+            <aside>
+                <h2>Detalles</h2>
+
+                <p>
+                    Selecciona un objeto para consultar su información.
+                </p>
+            </aside>
+
+        </section>
+
+
+        <section id="reportar">
+
+            <h2>Reportar objeto</h2>
+
+            <form>
+
+                <div>
+                    <label for="nombre">Nombre del objeto</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    >
+                </div>
+
+
+                <div>
+                    <label for="lugar">Lugar</label>
+                    <input
+                        type="text"
+                        id="lugar"
+                        name="lugar"
+                        required
+                    >
+                </div>
+
+
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required
+                    >
+                </div>
+
+
+                <div>
+                    <label for="descripcion">Descripción</label>
+
+                    <textarea
+                        id="descripcion"
+                        name="descripcion"
+                        rows="5"
+                    ></textarea>
+                </div>
+
+
+                <button type="submit">
+                    Enviar reporte
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Objetos Perdidos</p>
+        <p>Diseño de Interfaces de Usuario</p>
+    </footer>
+
+</body>
+
+</html>
