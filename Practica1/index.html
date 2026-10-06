@@ -5,25 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Objetos Perdidos</title>
+    <title>Sistema de Objetos Perdidos de la Facultad de Ciencias</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <div class="decoracion-fondo" aria-hidden="true">
+        <img
+            class="sigilo sigilo-1"
+            src="imagenes/decoracion/sigilo-1.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-2"
+            src="imagenes/decoracion/sigilo-2.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-3"
+            src="imagenes/decoracion/sigilo-3.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-4"
+            src="imagenes/decoracion/sigilo-4.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-6"
+            src="imagenes/decoracion/sigilo-6.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-7"
+            src="imagenes/decoracion/sigilo-7.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-8"
+            src="imagenes/decoracion/sigilo-8.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-9"
+            src="imagenes/decoracion/sigilo-9.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-10"
+            src="imagenes/decoracion/sigilo-10.png"
+            alt=""
+        >
+        <img
+            class="sigilo sigilo-11"
+            src="imagenes/decoracion/sigilo-11.png"
+            alt=""
+        >
+    </div>
+
     <header>
         <div>
-            <h1>Objetos Perdidos</h1>
+            <h1>Sistema de Objetos Perdidos de la Facultad de Ciencias</h1>
 
             <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#objetos">Buscar</a>
-                <a href="#reportar">Reportar</a>
-                <a href="#recuperados">Recuperados</a>
+                <a href="#inicio">
+                    <img
+                        class="icono icono-navegacion"
+                        src="imagenes/iconos/inicio.png"
+                        alt=""
+                    >
+                    Inicio
+                </a>
+                <a href="#reportar">
+                    <img
+                        class="icono icono-navegacion"
+                        src="imagenes/iconos/reportar.png"
+                        alt=""
+                    >
+                    Reportar
+                </a>
+                <a href="#recuperados">
+                    <img
+                        class="icono icono-navegacion"
+                        src="imagenes/iconos/recuperados.png"
+                        alt=""
+                    >
+                    Recuperados
+                </a>
             </nav>
 
-            <a href="#">Mi cuenta</a>
+            <a href="#">
+                <img
+                    class="icono icono-navegacion icono-cuenta"
+                    src="imagenes/iconos/mi-cuenta.png"
+                    alt=""
+                >
+                Mi cuenta
+            </a>
         </div>
 
         <form>
@@ -35,7 +115,13 @@
                 placeholder="¿Qué estás buscando?"
             >
 
-            <button type="submit">Buscar</button>
+            <button class="boton-buscar" type="submit" aria-label="Buscar">
+                <img
+                    class="icono icono-busqueda"
+                    src="imagenes/iconos/buscar.png"
+                    alt=""
+                >
+            </button>
         </form>
     </header>
 
@@ -44,13 +130,128 @@
 
         <section id="objetos">
 
-            <div>
+            <div class="lista-objetos">
                 <h2>Objetos recientes</h2>
 
-                <article>
+                <article class="objeto objeto-perdido">
+                    <img
+                        src="imagenes/objetos/mochila-negra.png"
+                        alt="Mochila negra reportada como perdida"
+                    >
+
+                    <div class="informacion-objeto">
+                        <h3>Mochila negra</h3>
+
+                        <p class="estado estado-perdido">Perdido</p>
+
+                        <p class="dato-objeto">
+                            <strong>Lugar:</strong>
+                            Facultad de Ciencias
+                        </p>
+
+                        <p class="dato-objeto">
+                            <strong>Fecha:</strong>
+                            2 de octubre
+                        </p>
+
+                        <p class="descripcion-objeto">
+                            Mochila negra encontrada cerca de los salones.
+                        </p>
+
+                        <button class="boton-con-icono" type="button">
+                            <img
+                                class="icono icono-boton"
+                                src="imagenes/iconos/ver-detalles.png"
+                                alt=""
+                            >
+                            Ver detalles
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="objeto objeto-encontrado">
+                    <img
+                        src="imagenes/objetos/llaves.png"
+                        alt="Juego de llaves reportado como encontrado"
+                    >
+
+                    <div class="informacion-objeto">
+                        <h3>Llaves</h3>
+
+                        <p class="estado estado-encontrado">Encontrado</p>
+
+                        <p class="dato-objeto">
+                            <strong>Lugar:</strong>
+                            Biblioteca
+                        </p>
+
+                        <p class="dato-objeto">
+                            <strong>Fecha:</strong>
+                            3 de octubre
+                        </p>
+
+                        <p class="descripcion-objeto">
+                            Juego de llaves con un llavero metálico.
+                        </p>
+
+                        <button class="boton-con-icono" type="button">
+                            <img
+                                class="icono icono-boton"
+                                src="imagenes/iconos/ver-detalles.png"
+                                alt=""
+                            >
+                            Ver detalles
+                        </button>
+                    </div>
+                </article>
+
+
+                <article id="recuperados" class="objeto objeto-recuperado">
+                    <img
+                        src="imagenes/objetos/telefono-movil.png"
+                        alt="Teléfono móvil devuelto a su propietario"
+                    >
+
+                    <div class="informacion-objeto">
+                        <h3>Teléfono móvil</h3>
+
+                        <p class="estado estado-recuperado">Recuperado</p>
+
+                        <p class="dato-objeto">
+                            <strong>Lugar:</strong>
+                            Cafetería
+                        </p>
+
+                        <p class="dato-objeto">
+                            <strong>Fecha:</strong>
+                            4 de octubre
+                        </p>
+
+                        <p class="descripcion-objeto">
+                            Teléfono que ya fue entregado a su propietario.
+                        </p>
+
+                        <button class="boton-con-icono" type="button">
+                            <img
+                                class="icono icono-boton"
+                                src="imagenes/iconos/ver-detalles.png"
+                                alt=""
+                            >
+                            Ver detalles
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+
+            <aside class="panel-detalles">
+                <h2>Detalles</h2>
+
+                <div class="detalle-objeto">
                     <h3>Mochila negra</h3>
 
-                    <p>Perdido</p>
+                    <p class="estado estado-perdido">Perdido</p>
 
                     <p>
                         <strong>Lugar:</strong>
@@ -62,67 +263,20 @@
                         2 de octubre
                     </p>
 
-                    <p>
-                        Mochila negra encontrada cerca de los salones.
+                    <p class="descripcion-detalle">
+                        Mochila negra con detalles grises, encontrada cerca
+                        de los salones.
                     </p>
 
-                    <button type="button">Ver detalles</button>
-                </article>
-
-
-                <article>
-                    <h3>Llaves</h3>
-
-                    <p>Encontrado</p>
-
-                    <p>
-                        <strong>Lugar:</strong>
-                        Biblioteca
-                    </p>
-
-                    <p>
-                        <strong>Fecha:</strong>
-                        3 de octubre
-                    </p>
-
-                    <p>
-                        Juego de llaves con un llavero metálico.
-                    </p>
-
-                    <button type="button">Ver detalles</button>
-                </article>
-
-
-                <article id="recuperados">
-                    <h3>Teléfono móvil</h3>
-
-                    <p>Recuperado</p>
-
-                    <p>
-                        <strong>Lugar:</strong>
-                        Cafetería
-                    </p>
-
-                    <p>
-                        <strong>Fecha:</strong>
-                        4 de octubre
-                    </p>
-
-                    <p>
-                        Teléfono que ya fue entregado a su propietario.
-                    </p>
-
-                    <button type="button">Ver detalles</button>
-                </article>
-            </div>
-
-
-            <aside>
-                <h2>Detalles</h2>
-
-                <p>
-                    Selecciona un objeto para consultar su información.
-                </p>
+                    <button class="boton-con-icono" type="button">
+                        <img
+                            class="icono icono-boton"
+                            src="imagenes/iconos/contactar.png"
+                            alt=""
+                        >
+                        Contactar / Más información
+                    </button>
+                </div>
             </aside>
 
         </section>
@@ -178,7 +332,12 @@
                 </div>
 
 
-                <button type="submit">
+                <button class="boton-con-icono" type="submit">
+                    <img
+                        class="icono icono-boton"
+                        src="imagenes/iconos/enviar.png"
+                        alt=""
+                    >
                     Enviar reporte
                 </button>
 
@@ -190,7 +349,7 @@
 
 
     <footer>
-        <p>Objetos Perdidos</p>
+        <p>Sistema de Objetos Perdidos de la Facultad de Ciencias</p>
         <p>Diseño de Interfaces de Usuario</p>
     </footer>
 
